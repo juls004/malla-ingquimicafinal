@@ -1,0 +1,45 @@
+/* style.css */
+body {
+  font-family: sans-serif;
+  background: #fce4ec; /* rosado pastel */
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #880e4f; /* lila oscuro */
+}
+
+.malla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.materia {
+  background-color: #f8bbd0; /* rosado claro */
+  border: 2px solid #880e4f;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.materia.bloqueada {
+  background-color: #e1bee7; /* lila suave */
+  border: 2px dashed #ab47bc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.materia.aprobada {
+  background-color: #ce93d8; /* lila intermedio */
+  border: 2px solid #6a1b9a;
+  color: white;
+}
